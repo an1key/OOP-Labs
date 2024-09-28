@@ -13,25 +13,24 @@ namespace Lab1
 
         public Figure(TypeOfFigure typeOfFigure, double line_length)
         {
-            if (typeOfFigure == TypeOfFigure.Rectangle)
+            switch (typeOfFigure)
             {
-                _square = line_length * line_length;
+                case TypeOfFigure.Triangle:
+                    _square = double.Sqrt(3) * line_length / 2;
+                    break;
+                case TypeOfFigure.Rectangle:
+                    _square = line_length * line_length;
+                    break;
+                case TypeOfFigure.Pentagon:
+                    _square = (line_length * line_length / 4) * double.Sqrt(25 + 10 * double.Sqrt(5));
+                    break;
+                case TypeOfFigure.Octagon:
+                    _square = line_length * line_length * 3 * double.Sqrt(3) / 2;
+                    break;
+                default:
+                    break;
             }
 
-            if (typeOfFigure == TypeOfFigure.Triangle)
-            {
-                _square = double.Sqrt(3) * line_length / 2;
-            }
-
-            if (typeOfFigure == TypeOfFigure.Pentagon)
-            {
-                _square = (line_length * line_length / 4) * double.Sqrt(25 + 10 * double.Sqrt(5));
-            }
-
-            if (typeOfFigure == TypeOfFigure.Octagon)
-            {
-                _square = line_length * line_length * 3 * double.Sqrt(3) / 2;
-            }
 
         }
     }    

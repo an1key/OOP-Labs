@@ -32,7 +32,16 @@ namespace Lab1
             this._habitat = Habitat.Ground;
             this._continent = Continent.Europe;
         }
-
+        
+        /// <summary>
+        ///  Конструктор с пармтерами
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="age"></param>
+        /// <param name="numberOfLegs"></param>
+        /// <param name="typeOfAnimal"></param>
+        /// <param name="habitat"></param>
+        /// <param name="continent"></param>
         public Animal(string name, int age, int numberOfLegs, TypeOfAnimal typeOfAnimal, Habitat habitat, Continent continent)
         {
             this._name = name;
