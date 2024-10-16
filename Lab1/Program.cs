@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System;
+using System.Security.Principal;
 using Lab1.Enums;
 namespace Lab1
 {
@@ -20,7 +21,6 @@ namespace Lab1
             animal3.Age = 30;
             
             Console.WriteLine(animal3.GetSound());
-
 
             Figure triangle = new Figure(TypeOfFigure.Triangle, 4);
             Console.WriteLine(triangle.Square);

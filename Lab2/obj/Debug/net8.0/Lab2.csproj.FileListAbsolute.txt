@@ -17,3 +17,9 @@
 /Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/obj/Debug/net8.0/Lab2.pdb
 /Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/obj/Debug/net8.0/Lab2.genruntimeconfig.cache
 /Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/obj/Debug/net8.0/ref/Lab2.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/nunit.engine.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/nunit.engine.api.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/nunit.engine.core.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab2/bin/Debug/net8.0/testcentric.engine.metadata.dll

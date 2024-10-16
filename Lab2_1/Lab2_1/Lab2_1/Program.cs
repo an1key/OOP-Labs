@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Lab2;
+﻿using Lab2;
 namespace Lab2
 {
     class Program
@@ -19,7 +18,8 @@ namespace Lab2
             // Примеры операций
             current.Deposit(1200000); // Должно добавить +2000 на дебетовый счет
             atm.Transfer(current, debit, 15000);
-            atm.CheckDebitAccountRestrictions(debit, credit);
+            atm.Transfer(credit, debit, 10000);
+            
         }
     }
 }
