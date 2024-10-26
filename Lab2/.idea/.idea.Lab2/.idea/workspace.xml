@@ -8,50 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8095a06-13f2-49ad-bab8-6acf134517ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab2.dir/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Lab2.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrentAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DebitAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/ATM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/Account.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/CreditAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/CurrentAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/DebitAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/Lab2_1/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2_1/Lab2_1/UnitTest/ATMTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/obj/Debug/net8.0/Lab1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/obj/Debug/net8.0/Lab1.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/obj/Debug/net8.0/Lab1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/obj/Debug/net8.0/Lab1.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Account.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/BankomatTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Lab2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/Lab3/Bus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/Lab3/PassengerTransport.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Lab2.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Lab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Lab2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Lab2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Lab2.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Lab2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Lab2.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/obj/Debug/net8.0/Lab3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/obj/Debug/net8.0/Lab3.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/obj/Debug/net8.0/Lab3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/obj/Debug/net8.0/Lab3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/UnitTests/obj/Debug/net8.0/UnitTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/UnitTests/obj/Debug/net8.0/UnitTests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/UnitTests/obj/Debug/net8.0/UnitTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/UnitTests/obj/Debug/net8.0/UnitTests.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +82,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="a7bbe8e6-86a4-4e55-8eeb-a20dba24c784" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -129,6 +96,7 @@
       <workItem from="1728636154224" duration="7341000" />
       <workItem from="1728705513627" duration="1364000" />
       <workItem from="1728728489545" duration="1000" />
+      <workItem from="1729914080338" duration="31000" />
     </task>
     <servers />
   </component>

@@ -7,20 +7,24 @@ namespace ATMTests
     [TestFixture]
     public class ATMTests
     {
-        private CurrentAccount _currentAccount;
-        private DebitAccount _debitAccount;
-        private CreditAccount _creditAccount;
-        private ATM _atm;
-        
 
         // Тест 1: Депозит на текущий счет
         [Test]
         public void Deposit_IntoCurrentAccount_IncreasesBalance()
         {
-            _currentAccount = new CurrentAccount(500000);
+            /// <summary>
+            /// Range
+            /// </summary>
+            CurrentAccount _currentAccount = new CurrentAccount(500000);
             
+            /// <summary>
+            /// Act
+            /// </summary>
             _currentAccount.Deposit(10000);
             
+            /// <summary>
+            /// Assert
+            /// </summary>
             ClassicAssert.AreEqual(510000, _currentAccount.Balance);
         }
 
@@ -28,7 +32,7 @@ namespace ATMTests
         [Test]
         public void Withdraw_FromCurrentAccount_DecreasesBalance()
         {
-            _currentAccount = new CurrentAccount(500000);
+            CurrentAccount _currentAccount = new CurrentAccount(500000);
            // 858618
             bool result = _currentAccount.Withdraw(10000);
             
@@ -40,7 +44,7 @@ namespace ATMTests
         [Test]
         public void Withdraw_Over30000_IsNotAllowed()
         {
-            _currentAccount = new CurrentAccount(500000);
+            CurrentAccount _currentAccount = new CurrentAccount(500000);
             
             bool result = _currentAccount.Withdraw(35000);
             
@@ -52,7 +56,7 @@ namespace ATMTests
         [Test]
         public void Deposit_OverMillion_AutoBonusToDebitAccount()
         {
-            _debitAccount = new DebitAccount(0);
+            DebitAccount _debitAccount = new DebitAccount(0);
             
             _debitAccount.Deposit(1000001);
             
@@ -63,9 +67,9 @@ namespace ATMTests
         [Test]
         public void Transfer_BetweenAccounts_IsSuccessful()
         {
-            _currentAccount = new CurrentAccount(500000);
-            _debitAccount = new DebitAccount(10000);
-            _atm = new ATM();
+            CurrentAccount _currentAccount = new CurrentAccount(500000);
+            DebitAccount _debitAccount = new DebitAccount(10000);
+            ATM _atm = new ATM();
             _atm.AddAccount(_currentAccount);
             _atm.AddAccount(_debitAccount);
             
@@ -79,9 +83,9 @@ namespace ATMTests
         [Test]
         public void Transfer_InsufficientFunds_IsUnsuccessful()
         {
-            _currentAccount = new CurrentAccount(500000);
-            _debitAccount = new DebitAccount(10000);
-            _atm = new ATM();
+            CurrentAccount _currentAccount = new CurrentAccount(500000);
+            DebitAccount _debitAccount = new DebitAccount(10000);
+            ATM _atm = new ATM();
             _atm.AddAccount(_currentAccount);
             _atm.AddAccount(_debitAccount);
 
@@ -95,8 +99,8 @@ namespace ATMTests
         [Test]
         public void DebitAccountBlocked_WhenCreditBalanceUnderLimit()
         {
-            _debitAccount = new DebitAccount(10000);
-            _creditAccount = new CreditAccount(-10000);
+            DebitAccount _debitAccount = new DebitAccount(10000);
+            CreditAccount _creditAccount = new CreditAccount(-10000);
 
             _creditAccount.Withdraw(15000); // Баланс становится -25000
             
@@ -107,7 +111,7 @@ namespace ATMTests
         [Test]
         public void WithdrawFromCreditAccount_AllowedIfBalanceAboveLimit()
         {
-            _creditAccount = new CreditAccount(-10000);
+            CreditAccount _creditAccount = new CreditAccount(-10000);
 
             bool result = _creditAccount.Withdraw(5000); // Баланс станет -15000
             
@@ -119,7 +123,7 @@ namespace ATMTests
         [Test]
         public void WithdrawFromCreditAccount_NotAllowedIfOverLimit()
         {
-            _creditAccount = new CreditAccount(-10000);
+            CreditAccount _creditAccount = new CreditAccount(-10000);
             
             bool result = _creditAccount.Withdraw(15000); // Попытка сделать баланс -25000
             
@@ -131,9 +135,9 @@ namespace ATMTests
         [Test]
         public void TotalBalance_AllAccounts_UpdatesCorrectly()
         {
-            _currentAccount = new CurrentAccount(0);
-            _debitAccount = new DebitAccount(10000);
-            _creditAccount = new CreditAccount(0);
+            CurrentAccount _currentAccount = new CurrentAccount(0);
+            DebitAccount _debitAccount = new DebitAccount(10000);
+            CreditAccount _creditAccount = new CreditAccount(0);
             
             _currentAccount.Deposit(10000);
             _debitAccount.Withdraw(5000);
