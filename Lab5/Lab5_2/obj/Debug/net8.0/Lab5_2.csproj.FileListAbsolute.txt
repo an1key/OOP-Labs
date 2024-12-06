@@ -1,0 +1,15 @@
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/bin/Debug/net8.0/Lab5_2
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/bin/Debug/net8.0/Lab5_2.deps.json
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/bin/Debug/net8.0/Lab5_2.runtimeconfig.json
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/bin/Debug/net8.0/Lab5_2.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/bin/Debug/net8.0/Lab5_2.pdb
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.AssemblyInfoInputs.cache
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.AssemblyInfo.cs
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.csproj.CoreCompileInputs.cache
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.sourcelink.json
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/refint/Lab5_2.dll
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.pdb
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/Lab5_2.genruntimeconfig.cache
+/Users/an1key/docy/study/Объектно ориентированное программирование/Labs/OOP-Labs/Lab5/Lab5_2/obj/Debug/net8.0/ref/Lab5_2.dll
