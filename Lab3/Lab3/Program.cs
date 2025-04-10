@@ -9,7 +9,7 @@ class Program
         Console.WriteLine("Welcome to the Passenger Transport Revenue Calculator!");
         Console.WriteLine("Choose a transport type:");
 
-        // Создаём список транспортных средств
+       
         var transports = new List<IPassengerTransport>
         {
             new Bus(),
@@ -17,7 +17,7 @@ class Program
             new Train()
         };
 
-        // Выводим список транспорта для выбора
+
         for (int i = 0; i < transports.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {transports[i].TransportName}");
@@ -33,9 +33,9 @@ class Program
             var selectedTransport = transports[transportIndex - 1];
             Console.WriteLine($"You selected: {selectedTransport.TransportName}");
             Console.WriteLine();
-
-            // Запускаем маршрут
-            if (selectedTransport.StartRoute())
+            
+            
+            if (selectedTransport.StartRoute([]))
             {
                 Console.WriteLine($"The route for {selectedTransport.TransportName} has been completed.");
                 Console.WriteLine($"Total revenue: {selectedTransport.GetRevenuePerRoute()} rubles.");

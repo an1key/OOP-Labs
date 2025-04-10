@@ -12,7 +12,7 @@ public interface IPassengerTransport
     /// Начать маршрут.
     /// </summary>
     /// <returns>True, если маршрут завершён успешно.</returns>
-    bool StartRoute();
+    bool StartRoute(string[] args);
 
     /// <summary>
     /// Сбросить состояние транспорта для нового маршрута.

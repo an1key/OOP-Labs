@@ -1,7 +1,6 @@
 using Lab3;
 using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using System.IO;
 
 namespace Lab3Tests
 {
@@ -13,13 +12,9 @@ namespace Lab3Tests
         {
             // Arrange
             var taxi = new Taxi();
-
-            // Симулируем ввод данных
-            var input = new StringReader("15\nend\n");
-            Console.SetIn(input);
-
+            
             // Act
-            taxi.StartRoute();
+            taxi.StartRoute(["15", "end"]);
             int revenue = taxi.GetRevenuePerRoute();
 
             // Assert
@@ -31,16 +26,12 @@ namespace Lab3Tests
         {
             // Arrange
             var taxi = new Taxi();
-
-            // Симулируем некорректный ввод данных
-            var input = new StringReader("abc\n25\nend\n");
-            Console.SetIn(input);
-
+            
             using var output = new StringWriter();
             Console.SetOut(output);
 
             // Act
-            taxi.StartRoute();
+            taxi.StartRoute(["abc","25","end"]);
 
             // Assert
             string consoleOutput = output.ToString();

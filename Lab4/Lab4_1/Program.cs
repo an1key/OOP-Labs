@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Lab4_1;
 
 class Program

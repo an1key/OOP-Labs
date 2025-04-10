@@ -1,7 +1,6 @@
 using Lab3;
 using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using System.IO;
 
 namespace Lab3Tests
 {
@@ -13,13 +12,9 @@ namespace Lab3Tests
         {
             // Arrange
             var bus = new Bus();
-
-            // Simулируем ввод данных
-            var input = new StringReader("10\nend\n");
-            Console.SetIn(input);
             
             // Act
-            bus.StartRoute();
+            bus.StartRoute(["10","end"]);
             int revenue = bus.GetRevenuePerRoute();
 
             // Assert
@@ -31,16 +26,12 @@ namespace Lab3Tests
         {
             // Arrange
             var bus = new Bus();
-
-            // Симулируем некорректный ввод данных
-            var input = new StringReader("abc\n5\nend\n");
             
-            Console.SetIn(input);
             using var output = new StringWriter();
             Console.SetOut(output);
             
             // Act
-            bus.StartRoute();
+            bus.StartRoute(["abc","5","end"]);
 
 
 
@@ -55,13 +46,9 @@ namespace Lab3Tests
         {
             // Arrange
             var bus = new Bus();
-
-            // Симулируем ввод данных
-            var input = new StringReader("10\nend\n");
-            Console.SetIn(input);
-
+            
             // Act
-            bus.StartRoute();
+            bus.StartRoute(["10","end"]);
             bus.Reset();
 
             // Assert

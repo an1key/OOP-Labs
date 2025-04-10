@@ -19,29 +19,24 @@ public class Train : IPassengerTransport
         Console.WriteLine($"{TransportName} created");
     }
 
-    public bool StartRoute()
+    public bool StartRoute(string[] args)
     {
         Reset();
-        Console.WriteLine("Enter the number of regular passengers:");
-        while (true)
+        Queue<int> passList = new Queue<int>();
+        foreach (string arg in args)
         {
-            if (int.TryParse(Console.ReadLine(), out int regular))
+            if (int.TryParse(arg, out int passengers))
             {
-                _regularPassengers = regular;
-                break;
+                passList.Enqueue(passengers);
             }
-            Console.WriteLine("Invalid input. Try again");
-        }
-        Console.WriteLine("Enter the number of discounted passengers:");
-        while(true)
-        {
-            if (int.TryParse(Console.ReadLine(), out int discounted))
+            else
             {
-                _discountedPassengers = discounted;
-                break;
+                Console.WriteLine("Invalid input. Try again");
             }
-            Console.WriteLine("Invalid input. Try again");
         }
+
+        _regularPassengers = passList.Dequeue();
+        _discountedPassengers = passList.Dequeue();
         
         Console.WriteLine($"The route is over. Revenue: {GetRevenuePerRoute()} rubles");
         return true;

@@ -18,16 +18,15 @@ public class Bus : IPassengerTransport
         Console.WriteLine($"{TransportName} created");
     }
 
-    public bool StartRoute()
+    public bool StartRoute(string[] args)
     {
         Reset(); // Сбрасываем перед новым маршрутом
         Console.WriteLine("You started the route. Enter the number of passengers boarded or type 'end' to finish the route:");
 
         string input;
-        while ((input = Console.ReadLine()) != "end")
-        {
-            Console.WriteLine("The bus stopped on the station. Enter the number of passengers boarded or type 'end' to finish the route:");
-            if (int.TryParse(input, out int newPassengers))
+        foreach (string arg in args)
+        {   
+            if (int.TryParse(arg, out int newPassengers))
             {
                 _currentPassengers += newPassengers;
                 Console.WriteLine($"Current count of passengers: {_currentPassengers}");

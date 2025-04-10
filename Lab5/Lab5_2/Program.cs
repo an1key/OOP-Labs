@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         List<string> docs = new List<string>();
-        int maxResults = 10000; // Максимальное количество результатов для предотвращения переполнения
+        int maxResults = 1000000; // Максимальное количество результатов для предотвращения переполнения
 
         try
         {
@@ -20,7 +20,7 @@ class Program
                 Console.WriteLine($"Обрабатываю диск: {drive.Name}");
                 try
                 {
-                    ProcessDirectory("/users/an1key/docy", docs, maxResults);
+                    ProcessDirectory("/", docs, maxResults);
 
                 }
                 catch (UnauthorizedAccessException)
@@ -53,7 +53,7 @@ class Program
             // Добавление файлов с нужными расширениями
             foreach (var file in Directory.GetFiles(directory))
             {
-                if (file.EndsWith(".doc") || file.EndsWith(".docx") || file.EndsWith(".pdf"))
+                if (file.ToLower().EndsWith(".doc") || file.ToLower().EndsWith(".docx") || file.ToLower().EndsWith(".pdf"))
                 {
                     docs.Add(file);
                     if (docs.Count >= maxResults) return;
@@ -74,5 +74,15 @@ class Program
         {
             Console.WriteLine($"Слишком длинный путь: {directory}");
         }
+        catch (System.IO.IOException ex)
+        {
+            if (ex.Message.Contains("Result too large"))
+            {
+                Console.WriteLine("Слишком большой результат. Идем дальше");
+            }
+        }
+        
     }
 }
+
+

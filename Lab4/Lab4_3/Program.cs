@@ -12,7 +12,7 @@ class Program
         while (students.Count > 0)
         {
             var student = students.Dequeue();
-            Console.WriteLine($"{student.GetStudentInfo()}\n- {(student.GetDecision() ? "Отчислен" : "Не отчислен")}");
+            Console.WriteLine($"{student.GetStudentInfo()} {Environment.NewLine}- {(student.GetDecision() ? "Отчислен" : "Не отчислен")}");
         }
     }
 }

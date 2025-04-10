@@ -13,13 +13,7 @@ class Program
 
         // Создаём обёртку
         StudentWrapper studentWrapper = new StudentWrapper(studentArray);
-
-        Console.WriteLine("Список студентов:");
-        for (int i = 0; i < studentWrapper.Length; i++)
-        {
-            Console.WriteLine($"{i}: {studentWrapper[i].GetStudentInfo()}");
-        }
-
+        
         Console.WriteLine("\nПроверяем студентов на отчисление:");
         for (int i = 0; i < studentWrapper.Length; i++)
         {
@@ -27,6 +21,7 @@ class Program
             Console.WriteLine($"{studentWrapper[i].GetStudentInfo()} - {(decision ? "Отчислен" : "Не отчислен")}");
         }
 
+        Console.WriteLine("========================");
         // Удаляем студента, если он отчислен
         for (int i = 0; i < studentWrapper.Length; i++)
         {
@@ -37,7 +32,7 @@ class Program
                 i--; // После удаления сдвигаем индекс обратно
             }
         }
-
+        Console.WriteLine("========================");
         Console.WriteLine("\nОставшиеся студенты:");
         for (int i = 0; i < studentWrapper.Length; i++)
         {

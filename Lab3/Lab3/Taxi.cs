@@ -16,19 +16,19 @@ public class Taxi : IPassengerTransport
         Console.WriteLine($"{TransportName} created");
     }
 
-    public bool StartRoute()
+    public bool StartRoute(string[] args)
     {
         Reset();
         Console.WriteLine("Enter the distance traveled in kilometers:");
-        while (true)
+        foreach (string arg in args)
         {
-            if (double.TryParse(Console.ReadLine(), out double distance))
+            if (double.TryParse(arg, out double distance))
             {
                 _distance = distance;
                 Console.WriteLine($"Distance recorded: {_distance} km");
                 break;
             }
-            Console.WriteLine("Invalid input. Try again.");    
+            Console.WriteLine("Invalid input. Try again.");             
         }
         Console.WriteLine($"The route is over. Revenue: {GetRevenuePerRoute()} rubles");
         return true;       

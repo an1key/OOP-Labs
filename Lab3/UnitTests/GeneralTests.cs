@@ -1,7 +1,6 @@
 using Lab3;
 using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using System.IO;
 
 namespace Lab3Tests
 {
@@ -55,14 +54,11 @@ namespace Lab3Tests
             var train = new Train();
 
             // Первый маршрут
-            Console.SetIn(new StringReader("10\nend\n"));
-            bus.StartRoute();
+            bus.StartRoute(["10","end"]);
 
-            Console.SetIn(new StringReader("20\nend\n"));
-            taxi.StartRoute();
+            taxi.StartRoute(["20","end"]);
 
-            Console.SetIn(new StringReader("15\n5\nend\n"));
-            train.StartRoute();
+            train.StartRoute(["15","5","end"]);
 
             // Сброс состояния
             bus.Reset();
@@ -70,14 +66,13 @@ namespace Lab3Tests
             train.Reset();
 
             // Второй маршрут
-            Console.SetIn(new StringReader("15\nend\n"));
-            bus.StartRoute();
+            bus.StartRoute(["15","end"]);
 
-            Console.SetIn(new StringReader("30\nend\n"));
-            taxi.StartRoute();
 
-            Console.SetIn(new StringReader("10\n2\nend\n"));
-            train.StartRoute();
+            taxi.StartRoute(["30","end"]);
+
+
+            train.StartRoute(["10","2","end"]);
 
             // Assert
             ClassicAssert.AreEqual(15 * bus.PayPerPassenger, bus.GetRevenuePerRoute(), "Bus revenue mismatch for second route.");

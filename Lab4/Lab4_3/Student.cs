@@ -38,8 +38,8 @@ public class Student
     public string GetStudentInfo()
     {
         return $"Студент {LastName} {FirstName} {MiddleName}\n" +
-               "Оценки:\n" +
-               string.Join("\n", Grades.Select(pair => $"{pair.Key}: {pair.Value}"));
+               $"Оценки:{Environment.NewLine}" +
+               string.Join(Environment.NewLine, Grades.Select(pair => $"{pair.Key}: {pair.Value}"));
     }
 
     public bool GetDecision()
@@ -48,8 +48,14 @@ public class Student
 
         foreach (var grade in Grades)
         {
-            int weight = SubjectWeights[grade.Key];
-            totalRisk += grade.Value * weight;
+            if (SubjectWeights.TryGetValue(grade.Key, out int weight))
+            {
+                totalRisk += grade.Value * weight;                
+            }
+            else
+            {
+                throw new IndexOutOfRangeException("Такого ключа нет в словаре");
+            }
         }
 
         return totalRisk < ExpulsionThreshold;
